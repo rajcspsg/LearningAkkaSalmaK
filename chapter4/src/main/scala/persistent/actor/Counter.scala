@@ -24,8 +24,6 @@ class Counter extends PersistentActor with ActorLogging {
 
   println(s"Starting...")
 
-  //override def = "counter-example"
-
   var state: State = State(0)
 
   def updateState(evt: Event): Unit = {
